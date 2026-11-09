@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now | Da Luna Aapartments</title>
+    <link rel="stylesheet" href="CSS/book.css">
+</head>
+
+<body>
+
+    <!--Header and Navigation-->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="images/final logo.jpg" class="site-logo" alt="Da Luna Logo">
+                <h1>Da Luna Apartments</h1>
+
+            </div>
+
+            <!--Navigation-->
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="apartment.html">Apartments & Services</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="attractions.html">Nearby attractions</a></li>
+                    <li><a href="book.html" class="btn-nav">Book now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-header">
+        <section class="booking-intro">
+            <h1>Book You Stay</h1>
+            <h3>
+                Complete the form below to check availability and reserve your stay directly with Da Luna Apartments
+            </h3>
+        </section>
+
+        <section class="booking-container">
+            <form class="info-form" id="bookingForm">
+                <div class="form-section">
+                    <h2>Guest infromation</h2>
+
+                    <div class="form-group">
+
+                        <p>
+                            <label for="fullname">Full Name</label>
+                            <input type="text" id="fullname" name="fullname">
+                            <span id="nameError" class="error"></span>
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <p>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                            <span id="emailError" class="error"></span>
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <p>
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                            <span id="phoneError" class="error"></span>
+
+                        </p>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <h2>Reservation Details</h2>
+                    <div class="form-group">
+
+                        <label> Select Accommodation</label>
+                        <div class="radio-option">
+                            <label class="radio-label">
+                                <input type="radio" id="apt1" name="apartment" value="Apartment 1">
+
+                                Apartment 1- R980.00
+                            </label>
+
+                        </div>
+                        <span id="apartmentError" class="error"></span>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+
+                            <label for="check in">Check in date:</label>
+
+                            <input type="date" id="checkin" name="checkin">
+                            <span id="checkinError" class="error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="Check out">Check out date:</label>
+
+                            <input type="date" id="checkout" name="checkout">
+                            <span id="checkoutError" class="error"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Number of guests:</label>
+
+                        <input type="number" id="guest" name="guest" max="4" min="1">
+                        <span id="guestError" class="error"></span>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <h2>Speacial Requests</h2>
+
+                    <div class="form-group">
+
+                        <label for="message">Speacial requests:</label>
+
+                        <textarea id="speacial request" name="speacial request" rows="5" cols="40">
+                </textarea>
+                    </div>
+                </div>
+
+                <!--Submit  Button-->
+                <div class="form-buttons">
+                    <input type="submit" value="Submit Reservation Request" class="btn-submit">
+                    <input type="reset" value="Clear form" class="btn-reset">
+                </div>
+            </form>
+        </section>
+
+        <section class="benefits-card">
+            <h2>Direct Booking Benefits</h2>
+            <ul class="benefits-list">
+                <li>Best available rates with zero platform commission fees.</li>
+                <li>Direct line of communication for early check-in or custom add-on</li>
+                <li>Flexible bookings modifications directly with the host</li>
+            </ul>
+        </section>
+    </main>
+    <script src="JS/book.js"></script>
+
+    <footer>
+        <div class="social-links">
+            <p>Follow us on:
+                <a href="https://www.instagram.com/de_luna_apartments_za?igsh=MTdpYmN6ZDFkYTB4cA=="
+                    target="_blank">Instagram</a> and
+                <a href="https://www.tiktok.com/@da_luna_apartments_za?_r=1&_t=ZS-98aHNFSSlfg" target="_blank">Tik
+                    tok</a>
+            </p>
+        </div>
+        <p>&copy; 2026 DeLuna Apartments. All Rights Reserved.</p>
+
+    </footer>
+
+</body>
+
+</html>

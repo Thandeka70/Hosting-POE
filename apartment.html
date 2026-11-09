@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartment & Services | Da Luna Apartments</title>
+    <link rel="stylesheet" href="CSS/apartment.css">
+    
+</head>
+
+<body>
+    <!--Header and Navigation-->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="images/final logo.jpg" class="site-logo" alt="Da Luna Logo">
+                <h1>Da Luna Apartments</h1>
+            </div>
+
+            <!--Navigation-->
+
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="apartment.html" class="active">Apartments & Services</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="attractions.html">Nearby attractions</a></li>
+                    <li><a href="book.html" class="btn-nav">Book now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!--Search Section-->
+
+        <section class="search-section">
+            <h1>Explore our Apartment</h1>
+            <input type="text" id="searchInput" placeholder="Search Our Apartment..." aria-label="Search Apartment">
+        </section>
+
+        <section class="Apartment">
+
+            <div class="card-container">
+
+                <!--Our Services-->
+                <article class="Apartment-card">
+                    <img src="images/lounge.png" alt="Apartment lounge" 
+                    class="gallery-image">
+                    <div class="card-content">
+                        <h3>Our lounge</h3>
+
+                        <p class="apartment">Da Luna Apartment Lounge</p>
+                        <p>
+                            Comfortable and fit for everyone.
+                        </p>
+                    </div>
+                </article>
+
+                <!--Our Kitchen-->
+                <article class="Apartment-card">
+                    <img src="images/kitchen 2.png" alt="Apartment kitchen" 
+                    class="gallery-image">
+                    <div class="card-content">
+                        <h3>Our Kitchen</h3>
+
+                        <p class="apartment">Da Luna Apartment Kitchen</p>
+                        <p>
+                            Enjoy our spaceous kitchen and create delious meals.
+                        </p>
+                    </div>
+                </article>
+
+                <!--Our Bedroom-->
+                <article class="Apartment-card">
+                    <img src="images/bedroom.png" alt="Apartment Bedroom" 
+                    class="gallery-image">
+                    <div class="card-content">
+                        <h3>Our Bedroom</h3>
+
+                        <p class="apartment">Da Luna Apartment Bedroom</p>
+                        <p>
+                            Enjoy the luxgurous Queen sized bed all to yourself.
+                        </p>
+                    </div>
+                </article>
+
+                <!--Our Store Units-->
+                <article class="Apartment-card">
+                    <img src="images/passage.jpg" alt="Apartment Store Unit" 
+                    class="gallery-image">
+                    <div class="card-content">
+                        <h3>Our Storage Units</h3>
+
+                        <p class="apartment">Da Luna Apartment Storage Unit</p>
+                        <p>
+                            We have storage units available for you and extra blankets.
+                        </p>
+                    </div>
+                </article>
+
+                <!--Our Bedroom-->
+                <article class="Apartment-card">
+                    <img src="images/bathroom 1.jpg" alt="Apartment bathroom" 
+                    class="gallery-image">
+                    <div class="card-content">
+                        <h3>Our Bathroom</h3>
+
+                        <p class="apartment">Da Luna Apartment Bathroom</p>
+                        <p>
+                            We have a bathtub and shower available for you to use.
+                        </p>
+                    </div>
+                </article>
+
+                <!--Our Rental-->
+                <article class="Apartment-card">
+                    <img src="images/price list.png" alt="Apartment Rent" 
+                    class="gallery-image">
+                    <div class="card-content">
+                        <h3>We offer Rentals</h3>
+
+                        <p class="apartment">Da Luna Apartment Rental</p>
+                        <p>
+                            Want the Apartment for a longer period? Da Luna Apartments is ready to rent the apartment to you.
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            
+            <!--No results Message-->
+
+            <p id="noResults" hidden>
+                No destinations found. Please try another search
+            </p>
+
+
+
+        </section>
+
+    </main>
+
+    <!--LightBox Overlay-->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Expanded Apartment Image">
+
+
+        <!--Close button-->
+
+        <button class="close-btn" id="closeLightbox" aria-label="Close Image">
+            &times;
+
+        </button>
+
+        <!--Enlarged image-->
+        <img src="" alt="" id="lightboxImage">
+
+    </div>
+
+    <!--Footer-->
+
+    <footer>
+
+        <div class="social-links">
+            <p>Follow us on:
+                <a href="https://www.instagram.com/de_luna_apartments_za?igsh=MTdpYmN6ZDFkYTB4cA=="
+                    target="_blank">Instagram</a> and
+                <a href="https://www.tiktok.com/@da_luna_apartments_za?_r=1&_t=ZS-98aHNFSSlfg" target="_blank">Tik
+                    tok</a>
+            </p>
+        </div>
+        <p>&copy; 2026 DeLuna Apartments. All Rights Reserved.</p>
+
+    </footer>
+    <script src="JS/apartment.js"></script>
+</body>
+
+</html>

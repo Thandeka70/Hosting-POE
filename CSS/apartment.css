@@ -1,0 +1,341 @@
+/*CSS RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Calibri, sans-serif;
+    background-color: #f2f2f2;
+    color: #0B1D3A;
+    line-height: 1.7;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: #C9A227;
+    font-size: 2.9rem;
+    
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+/*Header and Navigation*/
+.main-header{
+    background-color: #0B1D3A;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+    margin: 0 auto;
+    padding: 0.4rem;
+
+}
+.header-container{
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #0B1D3A;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.logo-container img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo-container h1{
+    font-weight: 1.4rem;
+    color: white;
+    font-weight: 500;
+    
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.nav-links a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover, 
+.nav-links a.active{
+    color: #c5a059;
+}
+
+/*Navigation Button*/
+
+.btn-nav{
+    background-color: #c5a059;
+    color: #ffffff;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-nav:hover{
+    background-color: #a68343;
+}
+
+/*Search Section */
+
+.search-section{
+text-align: center;
+margin-bottom: 35px;
+}
+
+
+#searchInput{
+width: 100%;
+max-width: 500px;
+padding: 14px;
+font-size: 16px;
+border: 2px solid #ddd;
+border-radius: 8px;
+/*Smooth border color change change */
+transition: border-color 0.3s ease;
+}
+
+#searchInput:focus{
+outline: none;
+border-color: #C9A227;
+}
+
+/*Apartment  Cards */
+
+.card-container{
+display: grid;
+/*Responsive card layout */
+grid-template-columns: repeat(
+auto-fit,
+minmax(min(100%,280px),1fr)
+);
+gap: 25px;
+margin-top: 20px;
+}
+
+.Apartment-card{
+background-color: white;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+/*Animation for card hover */
+transition: transform 0.3s ease,
+box-shadow 0.3s ease;
+}
+
+/*Raise card slightly on hover */
+.Apartment-card:hover{
+transform: translateY(-5px);
+}
+
+/*Apartment Images */
+
+.gallery-image{
+width: 100%;
+height: 200px;
+object-fit: cover;
+cursor: pointer;
+transition: opacity 0.3s ease;
+}
+
+.gallery-image:hover{
+opacity: 0.8;
+}
+
+.gallery-image:focus-visible{
+outline: 3px solid #007bff;
+outline-offset: -3px;
+}
+
+/*Card text */
+
+.card-content{
+padding: 20px;
+}
+
+.card-content h3{
+margin-top: 0;
+color: #0B1D3A;
+font-size: 25px;
+}
+
+.apartment{
+color: #777;
+font-size: 19px;
+font-weight: bold;
+}
+
+/*No result message */
+
+#noResult{
+text-align: center;
+color: #b42318;
+margin-top: 25px;
+}
+
+/*Lightbox */
+
+.lightbox{
+display: none;
+
+/*Covers the entire screen */
+
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.9);
+justify-content: center;
+align-items: center;
+z-index: 1000;
+}
+
+/* Show the lightbox */
+
+.lightbox.show{
+display: flex;
+/*Run fade in animation */
+animation: fadeIn 0.3s ease;
+}
+
+/* Enlarged Image */
+
+#lightboxImage{
+max-width: 85%;
+max-height: 80vh;
+object-fit: contain;
+border-radius: 8px;
+/*Run zoom animation */
+animation: zoomIn 0.3s ease;
+}
+
+/*Lightbox close button */
+
+.close-btn{
+position: absolute;
+top:20px;
+right: 30px;
+background: none;
+border: none;
+color: white;
+font-size: 40px;
+cursor: pointer;
+}
+
+[hidden]{
+display: none !important;
+}
+
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.gallery-card{
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 1.2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+/*Footer*/
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+footer{
+    text-align: center;
+    background-color: #0B1D3A;
+    color: #ffffff;
+    padding: 2rem 1rem;
+}
+
+footer a{
+    color: #C9A227;
+}
+
+/*Medis design*/
+
+@media  (max-width: 768px){
+    .header-container{
+        flex-direction:column;
+        gap: 1rem;
+    }
+
+    .nav-links{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+}
+
+/* CSS Animations */
+
+/*Lightbox fade-in */
+
+@keyframes fadeIn{
+from {
+opacity: 0;
+}
+to{
+opacity: 1;
+}
+}
+/*images zoomIn */
+@keyframes zoomIn{
+from{
+transform: scale(0.8);
+opacity: 0;
+}
+to{
+transform: scale(1);
+opacity: 1;
+}
+}
+
+/*Media design*/
+
+@media (max-width:768px) {
+    .header-container{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .nav-links{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cta-buttons{
+        flex-direction: column;
+    }
+    
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Da Luna Apartments</title>
+    <link rel="stylesheet" href="CSS/contact.css">
+</head>
+
+<body>
+
+    <!--Header and Navigation-->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="images/final logo.jpg" class="site-logo" alt="Da Luna Logo">
+                <h1>Da Luna Apartments</h1>
+
+            </div>
+
+            <!--Navigation-->
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="apartment.html">Apartments & Services</a></li>
+                    <li><a href="contact.html" class="active">Contact us</a></li>
+                    <li><a href="attractions.html">Nearby attractions</a></li>
+                    <li><a href="book.html" class="btn-nav">Book now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="contact-container">
+
+        <div class="sidebar-box">
+            <div class="sidebar-logo">
+                <img src="images/final logo.jpg" alt="Da Luna Apartments Logo">
+            </div>
+
+            <div class="sidebar-title">Da Luna Apartments Contact infromation</div>
+
+            <!-- Contact Info List -->
+            <ul class="contact-info-list">
+                <li><strong>Phone/WhatsApp:</strong> +27 82 123 4567</li>
+                <li><strong>Email:</strong> bonganizengele@outlook.com</li>
+                <li><strong>Location:</strong> Dries Human Street, Bethlehem, Free State, 9701</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!--Form Section-->
+
+    <section id="contact">
+
+        <h2>Inquire form</h2>
+
+        <form id="myForm">
+
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName">
+            <span id="nameError" class="error"></span>
+
+
+            <label for="phonenumber">Phone Number:</label>
+            <input type="tel" id="phonenumber" name="phonenumber">
+            <span id="phonenumberError" class="error"></span>
+
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email">
+            <span id="emailError" class="error"></span>
+
+
+            <!--Inqury Area-->
+
+            <label for="inqury">Enter your inqury here</label>
+            <textarea id="inqury" name="inqury" rows="5" cols="40"></textarea>
+            <span id="inquiryError" class="error"></span>
+
+            <div class="consent-group">
+                <div class="consent-checkbox-row">
+                    <input type="radio" id="consent" name="consent" value="yes">
+                    <label for=" consent " class="consent-label">Consent</label>
+                </div>
+                <p>Do you conset that Da Luna Apartments can access your personal infromation?</p>
+                <span id="consentError" class="error"></span>
+            </div>
+
+            <button type="submit" id="submitBtn">Submit</button>
+        </form>
+
+
+    </section>
+
+    <!--Map Section-->
+    <section class="map-section">
+        <h2>Our location</h2>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1816775.8775734303!2d26.878648825019503!3d-27.206890589298265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e92bdafef686b9b%3A0x81d592f4bc3d87ec!2s9%20Dries%20Human%20St%2C%20Bethlehem%2C%209701!5e0!3m2!1sen!2sza!4v1788259660851!5m2!1sen!2sza"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+
+        </div>
+    </section>
+
+    <script src="JS/contact.js"></script>
+
+
+    <!--footer-->
+
+    <footer>
+        <div class="social-links">
+            <p>Follow us on:
+                <a href="https://www.instagram.com/de_luna_apartments_za?igsh=MTdpYmN6ZDFkYTB4cA=="
+                    target="_blank">Instagram</a> and
+                <a href="https://www.tiktok.com/@da_luna_apartments_za?_r=1&_t=ZS-98aHNFSSlfg" target="_blank">Tik
+                    tok</a>
+            </p>
+        </div>
+        <p>&copy; 2026 DeLuna Apartments. All Rights Reserved.</p>
+
+    </footer>
+
+</body>
+
+</html>
